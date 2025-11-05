@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grocery List</title>
+    <title>Register | Grocery List</title>
     <style>
         body {
             font-family: Arial;
@@ -18,7 +18,7 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 350px;
+            width: 300px;
         }
         input, button {
             width: 100%;
@@ -36,42 +36,26 @@
         button:hover {
             background: #43a047;
         }
-        ul {
-            padding: 0;
-            margin-top: 15px;
-        }
-        li {
-            list-style: none;
-            background: #fff;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-top: 8px;
-            display: flex;
-            justify-content: space-between;
-        }
         a {
             text-decoration: none;
             color: #4CAF50;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>Home Grocery List</h2>
+    <h2>Create Account</h2>
 
-    <input type="text" placeholder="Add item...">
-    <button>Add</button>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
 
-    <ul>
-        <li>Milk</li>
-        <li>Bread</li>
-        <li>Tomatoes</li>
-    </ul>
+    <button>Sign Up</button>
 
-    <br>
-    <a href="dashboard.html">Back to Dashboard</a>
+    <br><br>
+    <a href="login.html">Already have an account?</a>
 </div>
 
 </body>

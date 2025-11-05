@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grocery List | Login</title>
+    <title>Login | Grocery List</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f6fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #43a047;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Welcome to Shared Grocery List</h2>
 
-    <form action="lists.html">
-        <label>Enter your name:</label><br>
-        <input type="text" placeholder="Your Name"><br><br>
+<div class="container">
+    <h2>Login</h2>
 
-        <button type="submit">Continue</button>
-    </form>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+
+    <button>Login</button>
+
+    <br><br>
+    <a href="register.html">Create account</a>
+</div>
+
 </body>
 </html>

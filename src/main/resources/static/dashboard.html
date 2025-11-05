@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grocery List</title>
+    <title>Dashboard | Grocery Lists</title>
     <style>
         body {
             font-family: Arial;
             background: #f5f6fa;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
         .container {
             text-align: center;
@@ -19,22 +19,6 @@
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             width: 350px;
-        }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #43a047;
         }
         ul {
             padding: 0;
@@ -47,8 +31,19 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             margin-top: 8px;
-            display: flex;
-            justify-content: space-between;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #43a047;
         }
         a {
             text-decoration: none;
@@ -59,19 +54,17 @@
 <body>
 
 <div class="container">
-    <h2>Home Grocery List</h2>
-
-    <input type="text" placeholder="Add item...">
-    <button>Add</button>
+    <h2>Your Grocery Lists</h2>
 
     <ul>
-        <li>Milk</li>
-        <li>Bread</li>
-        <li>Tomatoes</li>
+        <li>Home Grocery</li>
+        <li>Weekend Party List</li>
+        <li>Roommates Essentials</li>
     </ul>
 
-    <br>
-    <a href="dashboard.html">Back to Dashboard</a>
+    <button>Create New List</button>
+    <br><br>
+    <a href="login.html">Logout</a>
 </div>
 
 </body>
